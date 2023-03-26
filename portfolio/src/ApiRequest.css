@@ -1,0 +1,31 @@
+.home{
+    background-image: url("assets/home.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rainy{
+    background-image: url("assets/rainy.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hltext{
+    color: white;
+    text-shadow:
+    -2px -2px 0 #000000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+    font-weight: bold;
+}
+p{
+    font-size: xx-large;
+    text-align: left;
+}
+input{
+    font-size: x-large;
+    margin-right: 2em;
+    padding-left: 0.4em;
+}
+.icon{
+    align-self: center;
+}
