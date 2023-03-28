@@ -58,7 +58,7 @@ function Weather() {
             </div>
             {location != "Enter a place" ? (
                 <div>
-                    <h2 align="right"><img src="https://pngimg.com/uploads/gps/small/gps_PNG66.png" height="30"></img> <a href={`https://www.google.com/maps/@${location?.data?.location?.lat},${location?.data?.location?.lon},12z`} target="_blank">{location?.data?.location?.name} - {location?.data?.location?.region} - {location?.data?.location?.country.toUpperCase()}</a></h2>
+                    <h2 align="right"><img src="https://pngimg.com/uploads/gps/small/gps_PNG66.png" height="30"></img> <a href={`https://www.google.com/maps/place/${location?.data?.location?.name.split(' ').join('+')},+${location?.data?.location?.region}`} target="_blank">{location?.data?.location?.name} - {location?.data?.location?.region} - {location?.data?.location?.country.toUpperCase()}</a></h2>
                     <h1>{location?.data?.location?.localtime.substring(11,location?.data?.location?.localtime.length)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={location?.data?.current?.condition?.icon} alt="weather-image" className="icon"></img> {location?.data?.current?.temp_c} °C / {location?.data?.current?.temp_f} F</h1>
                     <h4 align="right">UV index: {indiceUv(location?.data?.current?.uv)}</h4>
                     <h2>
