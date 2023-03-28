@@ -67,3 +67,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.container{
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #213547;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.6s ease-out;
+}
+img{
+  vertical-align: text-top;
+}

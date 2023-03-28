@@ -21,11 +21,34 @@ p{
     font-size: xx-large;
     text-align: left;
 }
-input{
-    font-size: x-large;
-    margin-right: 2em;
-    padding-left: 0.4em;
-}
 .icon{
     align-self: center;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    align-items: center;
+    justify-content: space-between;
+  
+    color: white;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 16px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.search-box::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.details{
+   padding-left: 8px;
+   margin-right: 8px;
+}
+table{
+    display: inline-block;
 }
